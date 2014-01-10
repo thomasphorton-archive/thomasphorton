@@ -1,0 +1,104 @@
+@import "reset.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+	font-family: Futura;
+	background: #F9F3E3;
+}
+
+.full {
+	width: 100%;
+	display: block;
+}
+
+.full img {
+	width: 100%;
+}
+
+.hero {
+	position: relative;
+}
+
+.hero h1 {
+	position: absolute;
+	top: 35%;
+	text-align: center;
+	width: 100%;
+	color: #F9F3E3;
+	font-size: 3em;
+}
+
+.hero .subtitle {
+	color: #F9F3E3;
+	font-size:1.4em;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 60%;
+}
+
+.hero .subtitle span {
+	padding: 0.3em 0;
+	border-top: 3px solid #F9F3E3;
+	border-bottom: 3px solid #F9F3E3;
+}
+
+.card {
+	width: 50%;
+	float: left;
+	height: auto;
+	position: relative;
+	padding: 2em 0;
+	text-align: center;
+	font-size: 2em;
+	vertical-align: middle;
+}
+
+.card a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.one {
+	background: #62868D;
+	color: #F9F3E3;
+}
+
+.two {
+	background: #F9F3E3;
+	color: #D78B7D;
+}
+
+.three {
+	background: #D78B7D;
+	color: #F9F3E3;
+}
+
+.four {
+	background: #CFC8B5;
+	color: #62868D;
+}
+
+@media screen and (max-width: 480px) {
+
+	.hero h1 {
+		font-size: 1.8em;
+	}
+
+	.hero .subtitle {
+		font-size: 1.2em;
+	}
+
+	.hero .subtitle span {
+		padding: 0.2em 0;
+	}
+
+	.card {
+		width: 100%;
+		height: auto;
+	}
+}
