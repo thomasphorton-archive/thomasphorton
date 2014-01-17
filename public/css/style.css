@@ -95,9 +95,9 @@ h2 {
 }
 
 .blog_post {
-	width: 50%;
+	/*width: 50%;*/
 	padding: 2em;
-	float: left;
+	/*float: left;*/
 }
 
 .blog_post h2 {
