@@ -8,6 +8,7 @@
   "dependencies": {
     "express": "3.4.0",
     "ejs": "*",
-    "node-sass": "~0.7.0"
+    "node-sass": "~0.7.0",
+    "tumblr": "~0.3.0"
   }
 }

@@ -10,6 +10,14 @@ body {
 	background: #F9F3E3;
 }
 
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
 .full {
 	width: 100%;
 	display: block;
@@ -29,7 +37,6 @@ body {
 	text-align: center;
 	width: 100%;
 	color: #F9F3E3;
-	font-size: 3em;
 }
 
 .hero .subtitle {
@@ -83,6 +90,21 @@ body {
 	color: #62868D;
 }
 
+.card.portfolio {
+	/*background-image: url('/images/portfolio.jpg');*/
+}
+
+.blog_post {
+	width: 50%;
+	padding: 2em;
+	float: left;
+}
+
+.blog_post h2 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
 @media screen and (max-width: 480px) {
 
 	.hero h1 {
@@ -100,5 +122,9 @@ body {
 	.card {
 		width: 100%;
 		height: auto;
+	}
+
+	.blog_post {
+		width: 100%;
 	}
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='/css/style.css' />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+
+    </script>
+  </head>
+  <body>
+  	<div class="hero">
+  		<img src="/images/portfolio.jpg" alt="" class="full">
+  		<h1>BLOG</h1>
+  		<div class="subtitle">
+  			<span>psssh</span>
+  		</div>
+  		
+  	</div>
+    <div>
+      <% 
+      var j = 0;
+      for (var i=0; i < data.posts.length; i++) { 
+        j++;
+        if (j > 4) j = 1;
+        switch (j) {
+          case 1:
+            postClass = "one";
+            break;
+          case 2:
+            postClass = "two";
+            break;
+          case 3:
+            postClass = "three";
+            break;
+          case 4:
+            postClass = "four";
+            break;
+        }
+        
+      %>
+      <section class="blog_post <%= postClass %>">
+        <h2><%= data.posts[i].title %></h2>
+        <article><%- data.posts[i].body %></article>
+      </section>
+      <% } %>
+   
+    </div>
+  </body>
+</html>
