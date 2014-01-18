@@ -88,22 +88,14 @@ ul {
 	border-bottom: 3px solid #F9F3E3;
 }
 
-.card_holder {
+.row {
 	overflow: hidden;
 }
 
-.card {
+.half {
 	width: 50%;
 	float: left;
-	height: auto;
-	position: relative;
-	padding: 2em 0;
 	text-align: center;
-	vertical-align: middle;
-}
-
-.card a {
-	text-decoration: none;
 }
 
 .one {
@@ -150,7 +142,7 @@ ul {
 	line-height: 1.5em;
 }
 
-.card .text_block_inner {
+.half .text_block_inner {
 	width: auto;
 }
 
@@ -166,7 +158,7 @@ ul {
 
 @media screen and (max-width: 800px) {
 
-	.card {
+	.half {
 		width: 100%;
 		text-align: left;
 	}
@@ -184,11 +176,17 @@ ul {
 	}
 
 	.hero .subtitle {
+		position: relative;
 		font-size: 1.2em;
+		font-style: italic;
+		color: #D78B7D;
+		padding: 0.5em;
 	}
 
 	.hero .subtitle h2 {
 		padding: 0.1em 0;
+		border-top: none;
+		border-bottom: none;
 	}
 
 	.text_block_outer {
