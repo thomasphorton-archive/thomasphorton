@@ -10,6 +10,8 @@
     "ejs": "*",
     "node-sass": "~0.7.0",
     "tumblr": "~0.3.0",
-    "github": "~0.1.12"
+    "github": "~0.1.12",
+    "grunt": "~0.4.2",
+    "grunt-contrib-imagemin": "~0.5.0"
   }
 }
