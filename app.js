@@ -36,9 +36,6 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/404', function(req, res) {
-  res.render('404');
-});
 app.get('/', routes.index);
 app.get('/blog', routes.blog);
 app.get('/projects', routes.projects);

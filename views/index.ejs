@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <meta name="description" content="a full stack javascript developer and infosec enthusiast.">
+    <title><%= page_title %></title>
+    <meta name="description" content="<%= page_description %>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='/css/style.css' />
     <script type="text/javascript">
@@ -22,12 +22,12 @@
   <body>
 
   	<div class="hero">
-  		<img src="/images/redrocks.jpg" alt="" class="full">
-  		<h1>THOMAS P. HORTON</h1>
-  		<div class="subtitle">
-  			<h2>full stack developer</h2>
-  		</div>
-  	</div>
+      <img src="<%= hero_img_path %>" alt="" class="full">
+      <h1><%= hero_h1.toUpperCase() %></h1>
+      <div class="subtitle">
+        <h2><%= page_description %></h2>
+      </div>
+    </div>
 
     <div class="row">
 

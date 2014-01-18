@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <meta name="description" content="if it makes me laugh, panic, or think, it gets posted here.">
+    <title><%= page_title %></title>
+    <meta name="description" content="<%= page_description %>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='/css/style.css' />
     <script type="text/javascript">
@@ -23,14 +23,15 @@
     <header>
       <div class="header_nav three"><a href="/" class="header_link"><h3><i class="icon-home"> </i>home</h3></a></div>
     </header>
+
   	<div class="hero">
-  		<img src="/images/portfolio.jpg" alt="" class="full">
-  		<h1>BLOG</h1>
-  		<div class="subtitle">
-        <h2>if it makes me laugh, panic, or think, it gets posted here.</h2>
+  		<img src="<%= hero_img_path %>" alt="" class="full">
+  		<h1><%= hero_h1.toUpperCase() %></h1>
+      <div class="subtitle">
+        <h2><%= page_description %></h2>
       </div>
-  		
   	</div>
+    
     <div>
       <% 
       var j = 0;

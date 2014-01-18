@@ -12,12 +12,18 @@ var options = {
 };
 
 exports.index = function(req, res){
-  res.render('index', { title: 'thomas horton: full-stack web developer' });
+  res.render('index', { 
+    page_title: 'thomas horton: full-stack web developer',
+    page_description: 'full stack developer',
+    hero_h1: 'thomas p. horton',
+    hero_img_path: '/images/redrocks.jpg',
+  });
 };
 
 exports.blog = function(req, res){
 
   http.request(options, function(response) {
+
     var str = '';
 
     response.on('data', function(chunk) {
@@ -26,16 +32,16 @@ exports.blog = function(req, res){
 
     response.on('end', function() {
 
-      console.log(str);
-
       var data = JSON.parse(str);
 
-      console.log('data: ', data.response);
-
       res.render('blog', {
-        title: 'infosec and development web log',
+        page_title: 'infosec and development web log',
+        page_description: 'if it makes me laugh, panic, or think, it gets posted here.',
+        hero_h1: 'blog',
+        hero_img_path: '/images/portfolio.jpg',
         data: data.response
       });
+
     });
 
   }).end();
@@ -44,6 +50,11 @@ exports.blog = function(req, res){
 
 exports.projects = function(req, res){
 
-  res.render('projects', { title: 'portfolio and experiments: my current projects' });
+  res.render('projects', { 
+    page_title: 'portfolio and experiments: my current projects',
+    page_description: 'the projects that i\'ve let see the light of day.',
+    hero_h1: 'current projects',
+    hero_img_path: '/images/portfolio.jpg',
+  });
 
 };

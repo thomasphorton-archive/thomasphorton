@@ -24,28 +24,28 @@
   </head>
   <body>
 
+    <header>
+      <div class="header_nav three">
+        <a href="/" class="header_link"><h3><i class="icon-home"> </i>home</h3></a>
+      </div>
+    </header>
+
     <section class="text_block_outer one">
-
       <div class="text_block_inner">
-
         <h1>404!</h1>
         <h2>oh no!</h2>
-        <p>The page you're looking for isn't found- sorry about that! Use your browser's back function to try again, or treat yourself to a game of Snake below.</p>
-
+        <p>The page you're looking for (<%= url %>) wasn't found- sorry about that!</p>
+        <p>Use your browser's back function to try again, or treat yourself to a game of Snake (instructions below).</p>
       </div>
-        
     </section>
 
     <section class="text_block_outer two">
       <div class="text_block_inner game-wrapper">
-     
         <div class="game-overlay">
           <span class="game-msg">Score: <span class="score">0</span></span>
           <span class="btn btn-start one">Start</span>
         </div>
-
         <canvas class="game-board" height="600" width="1000"></canvas>
-        
       </div>
     </section>
 
@@ -57,14 +57,12 @@
 
     <section class="text_block_outer four">
       <div class="text_block_inner">
-
         <h3>Instructions:</h3>
         <p>W: Up</p>
         <p>A: Left</p>
         <p>S: Down</p>
         <p>D: Right</p>
         <p>Collect apples (red/gold) to score and grow. Don't run into yourself or the wall!</p>
-
       </div>
     </section>
 
