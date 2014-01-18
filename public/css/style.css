@@ -34,6 +34,10 @@ h3 {
 	font-size: 1.6em;
 }
 
+h3:not(:first-child) {
+	margin-top:0.5em;
+}
+
 a {
 	color: inherit;
 }
