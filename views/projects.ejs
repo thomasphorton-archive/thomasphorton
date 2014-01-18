@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='/css/style.css' />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28026409-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header_nav three"><a href="/" class="header_link"><h3><i class="icon-home"> </i>home</h3></a></div>
+    </header>
+  	<div class="hero">
+  		<img src="/images/portfolio.jpg" alt="" class="full">
+  		<h1>CURRENT PROJECTS</h1>
+  		<div class="subtitle">
+  			<span>shhh</span>
+  		</div>
+  	</div>
+    <div>
+     
+    <section class="text_block_outer two">
+      <div class="text_block_inner">
+        <a href="http://stupidchatapp.herokuapp.com"><h2>Stupid Chat App</h2></a>
+        <p>The name used to say it all- but I've had a lot of fun exploring <a href="http://nodejs.org">node.js</a> development in order to implement functionalities to my pseudo-anonymous chat application.</p>
+        <p>This <a href="http://stupidchatapp.herokuapp.com">real-time chat application</a> (codename: Stupid Chat App) was built using <a href="http://nodejs.org">node.js</a>, <a href="http://expressjs.com">express.js</a>, and <a href="http://socket.io">socket.io</a>.</p>
+        <p>In addition to being my first venture into cloud-based deployment using <a href="http://heroku.com">Heroku</a>, this project was also my first attempt at using <a href="http://postgresql.org">PostgreSQL databases</a>.</p>
+        <p>Currently, guest users can text chat under a chosen pseudonym, and registered users can choose to insert images or links into their messages.</p>
+        <p>Another undocumented feature is the ability to effortlessly spin up a new 'channel' by sharing a unique URL, allowing for a conversation only visible to users that know the URL secret (more to come on this feature later).</p>
+      </div>
+    </section>
+
+    <section class="text_block_outer one">
+      <div class="text_block_inner">
+        <a href="http://mystz.com"><h2>STZ</h2></a>
+        <p>Wake, Skate, Surf, Snow.</p>
+        <p>A ground-up online store for a great local business. A pet project that grows with me- as I learn new skills I come back to <a href="http://mystz.com">mystz.com</a> for inspiration and practice implementing new workflows.</p>
+        <p>The single feature I'm most proud of is the <a href="http://mystz.com/builder.php">Custom Hoodie Builder</a>. I built the Hoodie Builder as a standalone single-page-application that was later integrated into the core website. The application utilizes a few important open-source libraries: <a href="http://requirejs.org">require.js</a>, <a href="http://underscorejs.org">underscore.js</a>, and <a href="http://backbonejs.org">backbone.js</a>.</p>
+        <p>MySTZ.com is also an opportunity for me to play around with new workflows. I am currently using <a href="http://gruntjs.com">grunt.js</a> as a local development task automator. My current workflow minifies and concatenates JS and CSS files into production assets which are then served to the user on initial pageload. The thinking behind that strategy was to sacrifice initial pageload time for a snappier experience on subsequent pages. I'm currently collecting data in attempt to support this idea- but that's a whole month's worth of blog posts at least.</p>
+      </div>
+    </section>
+
+    <section class="text_block_outer four">
+      <div class="text_block_inner">
+        <a href="/"><h2>The Site You're On Right Now</h2></a>
+        <p>Yep, this very site.</p>
+        <p>Every so often I come back and tinker with the 'ol personal site.</p>
+        <p>This iteration features a typical node stack (<a href="http://nodejs.org">node.js</a>, <a href="http://expressjs.org">express.js</a>)- but I took a little shortcut for storage.</p>
+        <p>Rather than hook up a traditional database to the site, I'm piggybacking off of my tumblr as a content management system- a really cool <a href="https://github.com/meritt/node-tumblr">Tumblr node module</a> wraps the <a href="http://www.tumblr.com/docs/en/api/v2">Tumblr API</a> nicely and makes it a breeze to fetch blog posts and gives me full control of the design through <a href="http://embeddedjs.com">EJS</a> and <a href="http://sass-lang.com">Sass</a>.</p>
+        <p>The site was deployed through <a href="http://heroku.com">Heroku</a>.</a></p>
+      </div>
+    </section>
+
+    </div>
+  </body>
+</html>

@@ -3,10 +3,20 @@
   <head>
     <title><%= title %></title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='/css/style.css' />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
+    <script type="text/javascript">
 
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28026409-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
     </script>
   </head>
@@ -15,25 +25,54 @@
   		<img src="/images/redrocks.jpg" alt="" class="full">
   		<h1>THOMAS P. HORTON</h1>
   		<div class="subtitle">
-  			<span>full stack developer</span>
+  			<h2>full stack developer</h2>
   		</div>
   		
   	</div>
-    <div>
+    <div class="card_holder">
     	<section class="card one">
-    		<a href="#">current projects</a>
+    		<a href="/projects"><h2>current projects</h2></a>
     	</section>
     	<section class="card two">
-    		<a href="/blog">blog</a>
+    		<a href="/blog"><h2>blog</h2></a>
     	</section>
     </div>
     <div>
-    	<section class="card three">
+      <section class="text_block_outer three">
+        <div class="text_block_inner">
+          <h2>about me</h2>
+          <p>I'm a full-stack developer in Charlotte, North Carolina.</p>
+          <p>Although my job title is front-end developer, I like to get under the hood and mess around server-side.</p>
+
+          <p>Right now I'm going through a phase that includes technologies such as:</p>
+          <ul>
+            <li><a href="http://nodejs.org">node.js</a></li>
+            <li><a href="http://expressjs.com">express</a> (<a href="http://sass-lang.com">Sass</a>, <a href="http://embeddedjs.com">EJS</a>)</li>
+            <li><a href="http://underscorejs.org">underscore.js</a></li>
+            <li><a href="http://backbonejs.org">backbone.js</a></li>
+            <li><a href="http://gruntjs.org">grunt.js</a></li>
+            <li><a href="http://socket.io">socket.io</a></li>
+          </ul>
+
+          <p>In addition, I do a lot of work in more traditional environments including:</p>
+
+          <ul>
+            <li>MAMP</li>
+            <li>VBScript</li>
+          </ul>
+
+        </div>
+        
+      </section>
+
+    </div>
+    <div>
+    	<!-- <section class="card three">
     		<a href="#">about me</a>
     	</section>
     	<section class="card four portfolio">
     		<a href="#">portfolio</a>
-    	</section>
+    	</section> -->
     </div>
   </body>
 </html>
