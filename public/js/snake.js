@@ -4,6 +4,7 @@ var environment = {
   width: 100,
   height: 60,
   init: function() {
+    msg.css({'visibility': 'visible'});
     ticker = setInterval(function(){
       player.move();
       
@@ -158,7 +159,7 @@ var player = {
   
 }
 
-var x0, x1, y0, y1, canvas, context, ticker, scoreboard, overlay, startButton;
+var x0, x1, y0, y1, canvas, context, ticker, scoreboard, overlay, msg, startButton;
 var score = 0;
 var interval = 75;
 
@@ -169,7 +170,8 @@ $(function(){
   canvas = $('.game-board');
   context = canvas[0].getContext('2d');
   
-  overlay = $('.game-overlay');
+  overlay = $('.game-overlay'),
+  msg = $('.game-msg');
   
   startButton = $('.btn-start');
   startButton.click(function(){
