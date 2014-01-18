@@ -16,7 +16,7 @@ exports.index = function(req, res){
     page_title: 'thomas horton: full-stack web developer',
     page_description: 'full stack developer',
     hero_h1: 'thomas p. horton',
-    hero_img_path: '/images/redrocks.jpg',
+    hero_img_path: '/images/red_rocks_retouched.jpg',
   });
 };
 
@@ -38,7 +38,7 @@ exports.blog = function(req, res){
         page_title: 'infosec and development web log',
         page_description: 'if it makes me laugh, panic, or think, it gets posted here.',
         hero_h1: 'blog',
-        hero_img_path: '/images/portfolio.jpg',
+        hero_img_path: '/images/flamingo_retouched.jpg',
         data: data.response
       });
 
@@ -54,7 +54,7 @@ exports.projects = function(req, res){
     page_title: 'portfolio and experiments: my current projects',
     page_description: 'the projects that i\'ve let see the light of day.',
     hero_h1: 'current projects',
-    hero_img_path: '/images/portfolio.jpg',
+    hero_img_path: '/images/blowing_rock_retouched.jpg',
   });
 
 };

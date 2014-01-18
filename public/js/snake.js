@@ -3,6 +3,11 @@ var environment = {
   nodeWidth: '10',
   width: 100,
   height: 60,
+  color: {
+    apple_1: '#D78B7D',
+    apple_2: '#62868D',
+    snake_head: '#62868D'
+  },
   init: function() {
     msg.css({'visibility': 'visible'});
     ticker = setInterval(function(){
@@ -55,7 +60,7 @@ var environment = {
     x0 = player.head[0] * environment.nodeWidth;
     y0 = player.head[1] * environment.nodeHeight;
         
-    context.fillStyle = '#62868D';
+    context.fillStyle = environment.color.snake_head;
     context.fillRect (x0, y0, environment.nodeWidth, environment.nodeHeight);
   
     $.each(player.segments, function(){
@@ -79,11 +84,11 @@ var apples = {
     randy = Math.floor(Math.random() * environment.height);
     seed = Math.floor(Math.random() * 10);
     if (seed < 2){
-      color = '#ede62d';
+      color = environment.color.apple_2;
       value = 20; 
     }
     else {
-      color = '#D78B7D';
+      color = environment.color.apple_1;
       value = 10;
     }
     apples.apple.push({x: randx, y: randy, color: color, value: value})
