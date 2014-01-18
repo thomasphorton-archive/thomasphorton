@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>404!</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='/css/style.css' />
+    <link rel="stylesheet" href='/css/snake.css' />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/js/snake.js"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28026409-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+  <body>
+
+    <section class="text_block_outer one">
+
+      <div class="text_block_inner">
+
+        <h1>404!</h1>
+        <h2>oh no!</h2>
+        <p>The page you're looking for isn't found- sorry about that! Use your browser's back function to try again, or treat yourself to a game of Snake below.</p>
+
+      </div>
+        
+    </section>
+
+    <section class="text_block_outer two">
+      <div class="text_block_inner game-wrapper">
+     
+        <div class="game-overlay">
+          <span class="game-msg">Score: <span class="score">0</span></span>
+          <span class="btn btn-start one">Start</span>
+        </div>
+
+        <canvas class="game-board" height="600" width="1000"></canvas>
+        
+      </div>
+    </section>
+
+    <section class="text_block_outer three">
+      <div class="text_block_inner">
+        <h2>Score: <span class="score">0</span></h2>
+      </div>
+    </section>
+
+    <section class="text_block_outer four">
+      <div class="text_block_inner">
+
+        <h3>Instructions:</h3>
+        <p>W: Up</p>
+        <p>A: Left</p>
+        <p>S: Down</p>
+        <p>D: Right</p>
+        <p>Collect apples (red/gold) to score and grow. Don't run into yourself or the wall!</p>
+
+      </div>
+    </section>
+
+  </body>
+</html>
