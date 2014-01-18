@@ -1,3 +1,4 @@
+@import "//fonts.googleapis.com/css?family=Source+Sans+Pro:300|Roboto+Slab:400,100,300";
 @import "reset.css";
 @import "fontello.css";
 
@@ -26,6 +27,18 @@ h2 {
 h3 {
 	font-family: Futura;
 	font-size: 1.6em;
+}
+
+a {
+	color: inherit;
+}
+
+pre {
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	padding: 0.5em 0;
+	font-family: Menlo;
+	font-size: 0.7em;
 }
 
 i {
@@ -90,28 +103,31 @@ ul {
 }
 
 .card a {
-	color: inherit;
 	text-decoration: none;
 }
 
 .one {
 	background: #62868D;
 	color: #F9F3E3;
+	border-color: #F9F3E3;
 }
 
 .two {
 	background: #F9F3E3;
 	color: #D78B7D;
+	border-color: #D78B7D;
 }
 
 .three {
 	background: #D78B7D;
 	color: #F9F3E3;
+	border-color: #F9F3E3;
 }
 
 .four {
 	background: #CFC8B5;
 	color: #62868D;
+	border-color: #62868D;
 }
 
 .header_nav {
@@ -119,8 +135,8 @@ ul {
 }
 
 .header_nav a {
-	color: inherit;
 	text-decoration: none;
+	padding: 0.2em 1em;
 }
 
 .text_block_outer {
@@ -138,10 +154,6 @@ ul {
 	margin-bottom: 0.5em;
 }
 
-.text_block_inner a {
-	color: inherit;
-}
-
 .blog_link {
 	display: block;
 	text-align: right;
@@ -156,10 +168,6 @@ ul {
 
 	.text_block_inner {
 		width: 100%;
-	}
-
-	.header_nav a {
-		padding: 0.2em 1em;
 	}
 
 }
