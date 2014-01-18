@@ -25,6 +25,10 @@ h2 {
 	line-height: 1.3em;
 }
 
+h2:not(:first-child) {
+	margin-top:0.5em;
+}
+
 h3 {
 	font-family: Futura;
 	font-size: 1.6em;
