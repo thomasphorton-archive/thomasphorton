@@ -12,7 +12,7 @@ var environment = {
         player.growQueue --;
       }
       
-      if ((Math.random() < 0.02 && apples.apple.length < 5) || apples.apple.length == 0){
+      if ((Math.random() < 0.02 && apples.apple.length < 5) || apples.apple.length === 0){
         apples.add();
       }
       
@@ -26,6 +26,7 @@ var environment = {
     clearInterval(ticker);
     startButton.text('Restart');
     overlay.fadeIn();
+
     _gaq.push(['_trackEvent', 'Snake Game', 'Died', score ]);
   },
   reset: function() {
@@ -43,8 +44,8 @@ var environment = {
     context.clearRect(0, 0, environment.width * environment.nodeWidth, environment.height * environment.nodeHeight);
     
     $.each(apples.apple, function(){
-      x0 = $(this)[0].x * environment.nodeWidth;
-      y0 = $(this)[0].y * environment.nodeHeight; 
+      x0 = this.x * environment.nodeWidth;
+      y0 = this.y * environment.nodeHeight; 
             
       context.fillStyle = $(this)[0].color;
       context.fillRect (x0, y0, environment.nodeWidth, environment.nodeHeight);
@@ -128,7 +129,7 @@ var player = {
     }
     
     $.each(player.segments, function(){
-      if (($(this)[0] == player.head[0]) && ($(this)[1] == player.head[1])){
+      if ((this[0] === player.head[0]) && (this[1] === player.head[1])){
         environment.die();
       }
     });
@@ -136,10 +137,10 @@ var player = {
     var i = 0;
     
     $.each(apples.apple, function(){
-      if (($(this)[0].x == player.head[0]) && ($(this)[0].y == player.head[1])){
-        player.growQueue += $(this)[0].value;
+      if ((this.x === player.head[0]) && (this.y === player.head[1])){
+        player.growQueue += this.value;
         apples.apple.splice(i, 1);
-        if (apples.apple.length == 0){
+        if (apples.apple.length === 0){
           apples.add();
         }
       }
