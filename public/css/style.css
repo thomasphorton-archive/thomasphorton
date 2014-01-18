@@ -100,7 +100,6 @@ ul {
 .half {
 	width: 50%;
 	float: left;
-	text-align: center;
 }
 
 .one {
@@ -161,11 +160,42 @@ ul {
 	font-weight: bold;
 }
 
+.gravatar_image {
+	margin-top: 0.7em;
+}
+
+@media screen and (min-width: 801px) {
+
+	.center_on_large {
+		text-align: center;
+	}
+
+	.right_on_large {
+		text-align: right;
+	}
+
+	.center_on_medium_below {
+		text-align: auto;
+	}
+
+}
+
 @media screen and (max-width: 800px) {
+
+	.center_on_large {
+		text-align: auto;
+	}
+
+	.right_on_large {
+		text-align: auto;
+	}
+
+	.center_on_medium_below {
+		text-align: center;
+	}
 
 	.half {
 		width: 100%;
-		text-align: left;
 	}
 
 	.text_block_inner {
@@ -174,7 +204,7 @@ ul {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {	
 
 	.hero h1 {
 		font-size: 1.8em;

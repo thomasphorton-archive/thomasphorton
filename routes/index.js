@@ -11,12 +11,19 @@ var options = {
   path: '/v2/blog/thomasphorton.tumblr.com/posts/text?api_key=' + oauth.consumer_key + '&notes_info=true'
 };
 
+var gravatar = require('gravatar');
+
+
 exports.index = function(req, res){
+
+  gravatar_url = gravatar.url('thomasphorton@gmail.com', {s: '200', r: 'pg', d: '404'});
+
   res.render('index', { 
     page_title: 'thomas horton: full-stack web developer',
     page_description: 'full stack developer',
     hero_h1: 'thomas p. horton',
     hero_img_path: '/images/red_rocks_retouched.jpg',
+    gravatar_url: gravatar_url
   });
 };
 
