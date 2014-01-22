@@ -8,8 +8,18 @@ var environment = {
     apple_2: '#62868D',
     snake_head: '#62868D'
   },
+  el: $('.game-board'),
   init: function() {
     msg.css({'visibility': 'visible'});
+
+    environment.el = $('.game-board');
+
+    boardWidth = environment.el.parent().css('width');
+
+    environment.el.attr('width',boardWidth);
+
+    environment.width = environment.el.width() / environment.nodeWidth;
+
     ticker = setInterval(function(){
       player.move();
       

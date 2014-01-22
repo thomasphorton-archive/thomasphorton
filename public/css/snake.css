@@ -1,12 +1,10 @@
 .game-wrapper {
-  width: 500px;
   position: relative;
 }
 
 .game-board {
   display: block;
-  width: 500px;
-  height: 300px;
+  width: 100%;
   background: url(/images/debut_dark.png);
   z-index: 1;
 }
